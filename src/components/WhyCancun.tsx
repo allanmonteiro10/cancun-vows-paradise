@@ -36,6 +36,22 @@ const WhyCancun = () => {
             Descubra por que Cancun é o destino dos sonhos para casais que buscam uma cerimônia única no Caribe
           </p>
         </div>
+
+        {/* Video Section */}
+        <div className="mb-16 max-w-4xl mx-auto">
+          <div className="relative aspect-video rounded-2xl overflow-hidden luxury-shadow">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Casamentos em Cancun - Paraíso no Caribe"
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <p className="text-center text-muted-foreground mt-4">
+            Veja como realizamos sonhos em um dos destinos mais paradisíacos do mundo
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
