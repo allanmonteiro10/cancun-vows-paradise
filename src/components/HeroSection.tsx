@@ -25,7 +25,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="elegant-text md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed text-2xl">
-          <strong className="text-accent font-medium">APENAS 5 VAGAS</strong> restantes para 2024 - Cerimônias exclusivas no paraíso caribenho
+          <strong className="text-accent font-medium">APENAS 5 VAGAS</strong> restantes para 2025 - Cerimônias exclusivas no paraíso caribenho
         </p>
 
         {/* Urgency Banner */}
