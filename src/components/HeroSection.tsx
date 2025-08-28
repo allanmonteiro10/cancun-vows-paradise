@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/lovable-uploads/82136e31-ed61-4135-9a31-b85a9d28b2e1.png)` }}
+        style={{ backgroundImage: `url(/lovable-uploads/fb6f4a0a-ef52-4700-bf3e-0ba90f5c2efc.png)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
       </div>
