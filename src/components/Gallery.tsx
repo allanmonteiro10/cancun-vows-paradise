@@ -10,8 +10,8 @@ const Gallery = () => {
 
   const images = [
     {
-      src: "/lovable-uploads/00e217ac-1ac7-4108-adcb-b0d9934021c5.png",
-      alt: "Casal feliz caminhando de mãos dadas na praia paradisíaca de Cancun"
+      src: "/lovable-uploads/b6ca74a4-ad45-4a5a-81b5-ae01f621cf84.png",
+      alt: "Casal radiante brindando com champagne na praia paradisíaca de Cancun"
     },
     {
       src: "/lovable-uploads/0f8167a4-a0d9-4c08-bc47-ebf05e6330c2.png",
