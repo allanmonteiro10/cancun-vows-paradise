@@ -26,7 +26,7 @@ const HeroSection = () => {
 
         <h1 className="wedding-headline text-5xl md:text-7xl mb-6 leading-tight">
           Realize Seu Casamento dos Sonhos
-          <span className="wedding-script block text-4xl md:text-6xl text-accent animate-pulse mt-2">
+          <span className="wedding-script block text-4xl md:text-6xl text-accent mt-2">
             em Cancun
           </span>
         </h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
           <Button variant="paradise" size="lg" className="text-lg px-10 py-6 animate-pulse shadow-lg shadow-primary/50">
-            💎 GARANTA SUA VAGA AGORA
+            GARANTA SUA VAGA AGORA
           </Button>
           <Button variant="elegant" size="lg" className="text-lg px-8 py-6">
             Ver Fotos Reais
