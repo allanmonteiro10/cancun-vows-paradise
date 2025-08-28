@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 import WeddingPackages from "@/components/WeddingPackages";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <ContactForm />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
