@@ -42,10 +42,21 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-          <Button variant="paradise" size="lg" className="text-lg px-10 py-6 animate-pulse shadow-lg shadow-primary/50">
-            GARANTA SUA VAGA AGORA
-          </Button>
-          <Button variant="elegant" size="lg" className="text-lg px-8 py-6">
+          <a 
+            href="https://wa.me/5521999999999?text=Olá! Gostaria de saber mais sobre os pacotes de casamento em Cancun" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="paradise" size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/60">
+              GARANTA SUA VAGA AGORA
+            </Button>
+          </a>
+          <Button 
+            variant="elegant" 
+            size="lg" 
+            className="text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Ver Fotos Reais
           </Button>
         </div>
