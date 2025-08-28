@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Star, Users, Clock } from "lucide-react";
 const HeroSection = () => {
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url(/lovable-uploads/82136e31-ed61-4135-9a31-b85a9d28b2e1.png)`
@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         <h1 className="wedding-headline text-5xl md:text-7xl mb-6 leading-tight">
           Realize Seu Casamento dos Sonhos
-          <span className="wedding-script block md:text-6xl mt-2 text-[#00ffd2] text-6xl">em Cancun</span>
+          <span className="wedding-script block md:text-6xl animate-pulse mt-2 text-[#00ffd2] text-6xl">em Cancun</span>
         </h1>
         
         <p className="elegant-text md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed text-2xl">
@@ -32,8 +32,8 @@ const HeroSection = () => {
         
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-          <Button variant="paradise" size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/50">
-            GARANTA SUA VAGA AGORA
+          <Button variant="paradise" size="lg" className="text-lg px-10 py-6 animate-pulse shadow-lg shadow-primary/50">
+            💎 GARANTA SUA VAGA AGORA
           </Button>
           <Button variant="elegant" size="lg" className="text-lg px-8 py-6">
             Ver Fotos Reais
