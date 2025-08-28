@@ -3,41 +3,35 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import gallery images
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+// Use real wedding images from uploads
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
     {
-      src: gallery1,
-      alt: "Cerimônia de casamento na praia ao pôr do sol em Cancun"
+      src: "/lovable-uploads/00e217ac-1ac7-4108-adcb-b0d9934021c5.png",
+      alt: "Casal feliz caminhando de mãos dadas na praia paradisíaca de Cancun"
     },
     {
-      src: gallery2,
-      alt: "Recepção elegante na praia com decoração tropical"
+      src: "/lovable-uploads/0f8167a4-a0d9-4c08-bc47-ebf05e6330c2.png",
+      alt: "Cerimônia íntima sob arco floral tropical na praia do Caribe"
     },
     {
-      src: gallery3,
-      alt: "Casal romântico caminhando na praia dourada"
+      src: "/lovable-uploads/319daa32-a072-4e05-b551-5439b1e0d4fa.png",
+      alt: "Noivos radiantes em altar elegante com vista para o mar azul turquesa"
     },
     {
-      src: gallery4,
-      alt: "Altar de casamento decorado na praia do Caribe"
+      src: "/lovable-uploads/acb134f7-9e6e-41b6-a119-b4adb55d72b1.png",
+      alt: "Momento romântico sob arco de flores brancas e folhagens douradas"
     },
     {
-      src: gallery5,
-      alt: "Dança dos noivos na areia ao entardecer"
+      src: "/lovable-uploads/dd1e7671-950f-40c9-9868-4066def0e262.png",
+      alt: "Celebração de união com familiares na praia cristalina de Cancun"
     },
     {
-      src: gallery6,
-      alt: "Venue luxuoso à beira-mar para casamentos"
+      src: "/lovable-uploads/e0c4b4c9-295c-4e91-82ad-ee93280d3879.png",
+      alt: "Cerimônia completa com convidados em cenário paradisíaco à beira-mar"
     }
   ];
 
