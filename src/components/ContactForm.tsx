@@ -8,7 +8,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ContactForm = () => {
   return (
-    <section className="py-20 paradise-gradient">
+    <section id="contact" className="py-20 paradise-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
