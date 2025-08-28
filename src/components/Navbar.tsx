@@ -9,8 +9,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Heart className="w-8 h-8 text-primary" />
-            <span className="text-xl font-light text-foreground">
-              Cancun <span className="text-primary font-normal">Vows</span>
+            <span className="font-playfair text-xl text-foreground">
+              Cancun <span className="wedding-script text-primary font-medium">Vows</span>
             </span>
           </div>
           

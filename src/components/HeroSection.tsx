@@ -24,15 +24,15 @@ const HeroSection = () => {
           <span className="text-sm font-medium">500+ Casais Realizaram o Sonho</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wide">
+        <h1 className="wedding-headline text-5xl md:text-7xl mb-6 leading-tight">
           Realize Seu Casamento dos Sonhos
-          <span className="block text-4xl md:text-6xl font-extralight text-accent animate-pulse">
+          <span className="wedding-script block text-4xl md:text-6xl text-accent animate-pulse mt-2">
             em Cancun
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto font-light leading-relaxed">
-          <strong className="text-accent">APENAS 5 VAGAS</strong> restantes para 2024 - Cerimônias exclusivas no paraíso caribenho
+        <p className="elegant-text text-xl md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed">
+          <strong className="text-accent font-medium">APENAS 5 VAGAS</strong> restantes para 2024 - Cerimônias exclusivas no paraíso caribenho
         </p>
 
         {/* Urgency Banner */}

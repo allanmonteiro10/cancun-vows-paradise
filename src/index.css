@@ -120,7 +120,20 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-light;
+    @apply bg-background text-foreground font-inter font-light;
+  }
+
+  /* Typography Hierarchy */
+  .wedding-headline {
+    @apply font-playfair font-medium tracking-wide;
+  }
+
+  .wedding-script {
+    @apply font-dancing font-medium;
+  }
+
+  .elegant-text {
+    @apply font-inter font-light tracking-wide;
   }
 
   .hero-gradient {
