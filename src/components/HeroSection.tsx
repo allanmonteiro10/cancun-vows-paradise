@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBeach from "@/assets/hero-beach.jpg";
+import { Star, Users, Clock } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -7,31 +7,59 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBeach})` }}
+        style={{ backgroundImage: `url(/lovable-uploads/82136e31-ed61-4135-9a31-b85a9d28b2e1.png)` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        {/* Trust Badge */}
+        <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2 mb-6">
+          <div className="flex">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+            ))}
+          </div>
+          <span className="text-sm font-medium">500+ Casais Realizaram o Sonho</span>
+        </div>
+
         <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wide">
-          Seu Casamento dos Sonhos
-          <span className="block text-4xl md:text-6xl font-extralight text-primary">
+          Realize Seu Casamento dos Sonhos
+          <span className="block text-4xl md:text-6xl font-extralight text-accent animate-pulse">
             em Cancun
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light leading-relaxed">
-          Celebre o amor no paraíso caribenho com cerimônias exclusivas em praias paradisíacas
+        <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto font-light leading-relaxed">
+          <strong className="text-accent">APENAS 5 VAGAS</strong> restantes para 2024 - Cerimônias exclusivas no paraíso caribenho
         </p>
+
+        {/* Urgency Banner */}
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm border border-red-400/30 rounded-lg px-4 py-2 mb-8">
+          <Clock className="w-4 h-4 text-red-300" />
+          <span className="text-sm font-medium text-red-100">Promoção termina em 48h - Desconto de 20%</span>
+        </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="paradise" size="lg" className="text-lg px-8 py-6">
-            Solicitar Orçamento
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+          <Button variant="paradise" size="lg" className="text-lg px-10 py-6 animate-pulse shadow-lg shadow-primary/50">
+            💎 GARANTA SUA VAGA AGORA
           </Button>
           <Button variant="elegant" size="lg" className="text-lg px-8 py-6">
-            Ver Galeria
+            Ver Fotos Reais
           </Button>
+        </div>
+
+        {/* Social Proof */}
+        <div className="flex items-center justify-center gap-4 text-sm mb-8">
+          <div className="flex items-center gap-2">
+            <Users className="w-4 h-4 text-accent" />
+            <span>23 casais planejando este mês</span>
+          </div>
+          <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+          <span>✅ Sem taxas ocultas</span>
+          <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+          <span>✅ Planejamento completo</span>
         </div>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
