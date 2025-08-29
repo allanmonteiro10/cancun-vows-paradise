@@ -48,8 +48,12 @@ const HeroSection = () => {
           </div>
           <div className="w-1 h-1 bg-white/50 rounded-full"></div>
           <span>✅ Sem taxas ocultas</span>
+            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+          <span>✅ Cerimonialista Brasileiros</span>
           <div className="w-1 h-1 bg-white/50 rounded-full"></div>
-          <span>✅ Planejamento completo</span>
+          <span>✅ Pagamento facilitado</span>
+            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+          <span>✅ Acessoria Completa</span>
         </div>
         
         
