@@ -7,11 +7,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Heart className="w-8 h-8 text-primary" />
-            <span className="font-playfair text-xl text-foreground">
-              Cancun <span className="wedding-script text-primary font-medium">Vows</span>
-            </span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/b108e71f-95c9-42f9-a3db-f03646605e67.png" 
+              alt="Casamento Praia" 
+              className="h-12 w-auto"
+            />
           </div>
           
           {/* Navigation Links */}
