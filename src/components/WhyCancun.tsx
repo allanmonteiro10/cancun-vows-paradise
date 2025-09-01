@@ -41,7 +41,7 @@ const WhyCancun = () => {
         <div className="mb-16 max-w-4xl mx-auto">
           <div className="relative aspect-video rounded-2xl overflow-hidden luxury-shadow">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/6WpW6kUb7uE"
               title="Casamentos em Cancun - Paraíso no Caribe"
               className="w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
