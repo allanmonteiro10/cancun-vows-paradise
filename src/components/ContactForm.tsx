@@ -5,10 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-
 const ContactForm = () => {
-  return (
-    <section id="contact" className="py-20 paradise-gradient">
+  return <section id="contact" className="py-20 paradise-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
@@ -87,11 +85,7 @@ const ContactForm = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="message">Mensagem</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Conte-nos mais sobre seu casamento dos sonhos..."
-                  rows={4}
-                />
+                <Textarea id="message" placeholder="Conte-nos mais sobre seu casamento dos sonhos..." rows={4} />
               </div>
               
               <Button variant="paradise" className="w-full" size="lg">
@@ -125,8 +119,8 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">E-mail</h3>
-                    <p className="text-muted-foreground">contato@cancunvows.com</p>
-                    <p className="text-muted-foreground">Resposta em até 2 horas</p>
+                    <p className="text-muted-foreground">contato@casamentopraia.com.br</p>
+                    <p className="text-muted-foreground">Resposta em até 24 horas</p>
                   </div>
                 </div>
               </CardContent>
@@ -140,7 +134,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Escritório</h3>
-                    <p className="text-muted-foreground">São Paulo - Brasil</p>
+                    <p className="text-muted-foreground">São José dos Campos - Brasil</p>
                     <p className="text-muted-foreground">Cancun - México</p>
                   </div>
                 </div>
@@ -156,7 +150,7 @@ const ContactForm = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Horário</h3>
                     <p className="text-muted-foreground">Segunda a Sexta: 9h às 18h</p>
-                    <p className="text-muted-foreground">Emergência 24h via WhatsApp</p>
+                    
                   </div>
                 </div>
               </CardContent>
@@ -164,8 +158,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactForm;
