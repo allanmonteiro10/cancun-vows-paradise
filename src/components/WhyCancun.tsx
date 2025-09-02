@@ -1,67 +1,80 @@
-import { Heart, Crown, Star, Sparkles } from "lucide-react";
+import { Diamond, Crown, Sparkles, Shield } from "lucide-react";
+
+const features = [
+  {
+    icon: Diamond,
+    title: "Romance Caribenho Exclusivo",
+    description: "Cerimônias únicas em praias paradisíacas com águas cristalinas e pôr do sol inesquecível"
+  },
+  {
+    icon: Crown,
+    title: "Luxo Incomparável",
+    description: "Resorts premium e serviços de alto padrão que transformam seu dia especial em pura sofisticação"
+  },
+  {
+    icon: Sparkles,
+    title: "Perfeição Garantida",
+    description: "Cada detalhe planejado com precisão para criar momentos mágicos que durarão para sempre"
+  },
+  {
+    icon: Shield,
+    title: "Tranquilidade Total",
+    description: "Cuidamos de toda documentação e logística para você apenas viver o amor intensamente"
+  }
+];
 
 const WhyCancun = () => {
-  const features = [
-    {
-      icon: Heart,
-      title: "Romance Caribenho Exclusivo",
-      description: "Praias paradisíacas de areia branca e mar turquesa cristalino criam o cenário mais romântico do mundo para eternizar seu amor."
-    },
-    {
-      icon: Crown,
-      title: "Luxo Premium & Privacidade",
-      description: "Resorts cinco estrelas e locais exclusivos na Riviera Maya, onde cada detalhe reflete a sofisticação que vocês merecem."
-    },
-    {
-      icon: Star,
-      title: "Perfeição Garantida",
-      description: "Clima tropical ideal 365 dias por ano e pôr do sol deslumbrante garantem fotos de revista em qualquer estação."
-    },
-    {
-      icon: Sparkles,
-      title: "Tranquilidade Total",
-      description: "Nossa equipe especializada cuida de toda burocracia e logística. Vocês só precisam se preocupar em viver este momento único."
-    }
-  ];
-
   return (
-    <section id="about" className="py-20 paradise-gradient">
+    <section id="company" className="py-24 subtle-gradient">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
-            O Paraíso Perfeito Para Seu
-            <span className="block text-primary font-normal wedding-script text-5xl md:text-6xl">Grande Dia</span>
+        {/* Header */}
+        <div className="text-center mb-20 max-w-4xl mx-auto">
+          <h2 className="wedding-headline text-4xl md:text-6xl mb-8 text-foreground">
+            Por que escolher{" "}
+            <em className="wedding-subline text-primary">Cancun?</em>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            <strong className="text-primary">Apenas casais verdadeiramente especiais</strong> escolhem Cancún para criar memórias eternas. 
-            Descubra por que este é o destino mais desejado para cerimônias exclusivas no Caribe.
+          <p className="elegant-text text-lg md:text-xl leading-relaxed">
+            Descubra por que Cancun é o destino dos sonhos para casais que buscam 
+            uma cerimônia única e inesquecível no paraíso caribenho
           </p>
         </div>
 
         {/* Video Section */}
-        <div className="mb-16 max-w-4xl mx-auto">
-          <div className="relative aspect-video rounded-2xl overflow-hidden luxury-shadow">
-            <iframe
-              src="https://www.youtube.com/embed/6WpW6kUb7uE"
-              title="Casamentos em Cancun - Paraíso no Caribe"
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="relative rounded-2xl overflow-hidden luxury-shadow">
+            <div className="aspect-video bg-muted/50">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/6WpW6kUb7uE"
+                title="Casamentos Reais em Cancun"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-          <p className="text-center text-muted-foreground mt-4">
-            <strong className="text-primary">Momentos reais de pura magia</strong> - Veja como transformamos sonhos em realidade no paraíso caribenho
+          <p className="text-center mt-6 elegant-text text-muted-foreground">
+            Momentos reais de casamentos que realizamos em Cancun
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-8 h-8 text-primary-foreground" />
+            <div 
+              key={index} 
+              className="group text-center md:text-left hover:transform hover:scale-105 transition-all duration-300"
+            >
+              <div className="flex justify-center md:justify-start mb-6">
+                <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                  <feature.icon className="h-8 w-8 text-primary" />
+                </div>
               </div>
-              <h3 className="text-xl font-medium mb-4 text-foreground">{feature.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+              <h3 className="wedding-headline text-2xl mb-4 group-hover:text-primary transition-colors duration-300">
+                {feature.title}
+              </h3>
+              <p className="elegant-text text-muted-foreground leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

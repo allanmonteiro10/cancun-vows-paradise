@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Caribbean Paradise Color Palette */
+    /* Elegant Neutral Palette - Inspired by Cheers Travel */
     --background: 0 0% 100%;
-    --foreground: 195 100% 10%;
+    --foreground: 0 0% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 195 100% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 195 100% 10%;
+    --popover-foreground: 0 0% 15%;
 
-    /* Caribbean Turquoise */
-    --primary: 174 72% 49%;
+    /* Elegant Bronze/Gold */
+    --primary: 35 65% 65%;
     --primary-foreground: 0 0% 100%;
     
-    /* Ocean Blue */
-    --secondary: 199 89% 48%;
+    /* Sophisticated Dark Blue */
+    --secondary: 210 22% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Golden Sand */
-    --accent: 45 93% 47%;
-    --accent-foreground: 195 100% 10%;
+    /* Warm Gold Accent */
+    --accent: 35 80% 75%;
+    --accent-foreground: 0 0% 15%;
 
-    /* Coral Sunset */
-    --coral: 16 100% 66%;
+    /* Coral Accent */
+    --coral: 16 85% 70%;
     --coral-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 174 72% 89%;
-    --input: 174 72% 95%;
-    --ring: 174 72% 49%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 35 65% 65%;
 
-    /* Caribbean Gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(199 89% 48%), hsl(174 72% 49%));
-    --gradient-sunset: linear-gradient(135deg, hsl(16 100% 66%), hsl(45 93% 47%));
-    --gradient-paradise: linear-gradient(180deg, hsl(174 72% 95%), hsl(199 89% 95%));
+    /* Elegant Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 22% 25% / 0.9), hsl(210 22% 15% / 0.8));
+    --gradient-gold: linear-gradient(135deg, hsl(35 65% 65%), hsl(35 80% 75%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 96%));
 
     /* Luxury Shadows */
-    --shadow-luxury: 0 20px 40px -12px hsl(174 72% 49% / 0.25);
-    --shadow-gentle: 0 4px 12px -2px hsl(174 72% 49% / 0.15);
+    --shadow-luxury: 0 25px 50px -12px hsl(0 0% 0% / 0.15);
+    --shadow-elegant: 0 8px 32px -8px hsl(35 65% 65% / 0.2);
 
     --radius: 1rem;
 
@@ -125,34 +125,38 @@ All colors MUST be HSL.
 
   /* Typography Hierarchy */
   .wedding-headline {
-    @apply font-playfair font-medium tracking-wide;
+    @apply font-playfair font-semibold tracking-tight text-foreground;
+  }
+
+  .wedding-subline {
+    @apply font-playfair font-normal italic text-muted-foreground;
   }
 
   .wedding-script {
-    @apply font-dancing font-medium;
+    @apply font-dancing font-medium text-primary;
   }
 
   .elegant-text {
-    @apply font-inter font-light tracking-wide;
+    @apply font-inter font-light tracking-wide text-muted-foreground;
   }
 
-  .hero-gradient {
-    background: var(--gradient-ocean);
+  .hero-overlay {
+    background: var(--gradient-hero);
   }
 
-  .sunset-gradient {
-    background: var(--gradient-sunset);
+  .gold-gradient {
+    background: var(--gradient-gold);
   }
 
-  .paradise-gradient {
-    background: var(--gradient-paradise);
+  .subtle-gradient {
+    background: var(--gradient-subtle);
   }
 
   .luxury-shadow {
     box-shadow: var(--shadow-luxury);
   }
 
-  .gentle-shadow {
-    box-shadow: var(--shadow-gentle);
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
   }
 }

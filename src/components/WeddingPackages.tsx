@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Crown, Sparkles } from "lucide-react";
+import { Check, Crown, Sparkles, Diamond } from "lucide-react";
 
 const WeddingPackages = () => {
   const packages = [
@@ -41,7 +41,7 @@ const WeddingPackages = () => {
     },
     {
       name: "Luxury",
-      icon: Crown,
+      icon: Diamond,
       price: "A partir de $28.900",
       description: "A experiência mais exclusiva para seu grande dia",
       features: [
@@ -61,64 +61,84 @@ const WeddingPackages = () => {
   ];
 
   return (
-    <section id="packages" className="py-20 bg-background">
+    <section id="packages" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
-            Pacotes de
-            <span className="block text-primary font-normal">Casamento</span>
+        {/* Header */}
+        <div className="text-center mb-20 max-w-4xl mx-auto">
+          <h2 className="wedding-headline text-4xl md:text-6xl mb-8 text-foreground">
+            Nossos{" "}
+            <em className="wedding-subline text-primary">Pacotes</em>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Escolha o pacote perfeito para tornar seu sonho realidade no paraíso caribenho
+          <p className="elegant-text text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Escolha o pacote perfeito para realizar seu sonho de casamento no paraíso.
+            Cada opção foi cuidadosamente criada para diferentes estilos e orçamentos.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Packages Grid */}
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
           {packages.map((pkg, index) => (
-            <Card key={index} className={`relative ${pkg.highlighted ? 'luxury-shadow border-primary scale-105' : 'gentle-shadow'} transition-all duration-300 hover:scale-105`}>
+            <Card 
+              key={index}
+              className={`group relative overflow-hidden transition-all duration-300 hover:luxury-shadow hover:scale-105 ${
+                pkg.highlighted 
+                  ? 'ring-2 ring-primary/20 border-primary/30 luxury-shadow' 
+                  : 'border-border/50 hover:border-primary/30'
+              }`}
+            >
               {pkg.highlighted && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-coral text-coral-foreground px-4 py-2 rounded-full text-sm font-medium">
-                    Mais Popular
-                  </span>
+                <div className="absolute top-0 left-0 right-0 gold-gradient text-secondary text-center py-2 text-sm font-semibold">
+                  MAIS POPULAR
                 </div>
               )}
               
-              <CardHeader className="text-center pb-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4 mx-auto">
-                  <pkg.icon className="w-8 h-8 text-primary" />
+              <CardHeader className={`text-center ${pkg.highlighted ? 'pt-12' : 'pt-8'}`}>
+                <div className="flex justify-center mb-4">
+                  <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                    <pkg.icon className="h-8 w-8 text-primary" />
+                  </div>
                 </div>
-                <CardTitle className="text-2xl font-light text-foreground">{pkg.name}</CardTitle>
-                <div className="text-3xl font-normal text-primary mb-2">{pkg.price}</div>
-                <p className="text-muted-foreground text-sm">{pkg.description}</p>
+                <CardTitle className="wedding-headline text-2xl mb-2 group-hover:text-primary transition-colors duration-300">
+                  {pkg.name}
+                </CardTitle>
+                <div className="mb-4">
+                  <span className="wedding-headline text-3xl text-primary">{pkg.price}</span>
+                </div>
+                <p className="elegant-text text-muted-foreground">{pkg.description}</p>
               </CardHeader>
               
-              <CardContent className="space-y-3">
-                {pkg.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-foreground">{feature}</span>
-                  </div>
-                ))}
+              <CardContent className="px-8">
+                <ul className="space-y-3">
+                  {pkg.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="elegant-text text-sm text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
               
-              <CardFooter>
+              <CardFooter className="px-8 pb-8">
                 <Button 
-                  variant={pkg.highlighted ? "paradise" : "elegant"} 
-                  className="w-full"
+                  className={`w-full ${
+                    pkg.highlighted 
+                      ? 'gold-gradient text-secondary hover:scale-105' 
+                      : 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
+                  } font-semibold py-3 transition-all duration-300`}
                 >
-                  Solicitar Orçamento
+                  Escolher {pkg.name}
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6">
+        {/* Bottom CTA */}
+        <div className="text-center">
+          <p className="elegant-text text-muted-foreground mb-6 text-lg">
             Todos os pacotes incluem assessoria para documentação necessária no Brasil
           </p>
-          <Button variant="outline" size="lg">
+          <Button className="gold-gradient text-secondary font-semibold px-10 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
             Personalize, fale com nossa equipe especializada
           </Button>
         </div>

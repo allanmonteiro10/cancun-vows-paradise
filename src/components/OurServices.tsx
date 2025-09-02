@@ -5,66 +5,83 @@ const services = [
   {
     name: "Destination Wedding",
     icon: Crown,
-    description: "Cerimônia completa em paraíso tropical com toda estrutura personalizada"
+    description: "Cerimônia completa em paraíso tropical com toda estrutura personalizada para o seu grande dia"
   },
   {
     name: "Elopement Wedding",
     icon: Heart,
-    description: "Fuga romântica a dois para um casamento íntimo e especial"
+    description: "Fuga romântica a dois para um casamento íntimo e especial em cenário paradisíaco"
   },
   {
     name: "Mini Wedding",
     icon: Users,
-    description: "Celebração intimista para famílias e amigos mais próximos"
+    description: "Celebração intimista para famílias e amigos mais próximos em ambiente acolhedor"
   },
   {
     name: "Renovação de Votos",
     icon: Sparkles,
-    description: "Renove suas promessas de amor em cenário paradisíaco"
+    description: "Renove suas promessas de amor em cenário paradisíaco e reacenda a chama da paixão"
   },
   {
     name: "Pedidos de Casamento",
     icon: Gift,
-    description: "Momento mágico e inesquecível para o pedido dos sonhos"
+    description: "Momento mágico e inesquecível para o pedido dos sonhos em local único"
   },
   {
     name: "Despedida de Solteiro",
     icon: PartyPopper,
-    description: "Celebre com estilo antes do grande dia em Cancun"
+    description: "Celebre com estilo e elegância antes do grande dia nas melhores experiências de Cancun"
   }
 ];
 
 const OurServices = () => {
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-background to-muted/20">
+    <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent">
-            Nossos Serviços
+        {/* Header */}
+        <div className="text-center mb-20 max-w-4xl mx-auto">
+          <h2 className="wedding-headline text-4xl md:text-6xl mb-8 text-foreground">
+            Nossos{" "}
+            <em className="wedding-subline text-primary">Serviços</em>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Transformamos seus momentos especiais em experiências inesquecíveis no paraíso caribenho
+          <p className="elegant-text text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Transformamos seus momentos especiais em experiências inesquecíveis 
+            no paraíso caribenho com serviços personalizados
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-muted/20 hover:border-primary/20 bg-card/50 backdrop-blur-sm">
+            <Card 
+              key={index} 
+              className="group hover:luxury-shadow transition-all duration-500 border-border/50 hover:border-primary/30 bg-card/80 backdrop-blur-sm hover:transform hover:scale-105"
+            >
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center">
-                  <div className="p-4 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 group-hover:from-primary/20 group-hover:to-secondary/20 transition-all duration-300">
-                    <service.icon className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                  <div className="p-5 rounded-full bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <service.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
-                <CardTitle className="text-xl mb-4 group-hover:text-primary transition-colors duration-300">
+                <CardTitle className="wedding-headline text-xl mb-4 group-hover:text-primary transition-colors duration-300">
                   {service.name}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardDescription className="elegant-text text-muted-foreground leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-20">
+          <p className="elegant-text text-muted-foreground mb-6 text-lg">
+            Pronto para planejar seu momento especial?
+          </p>
+          <button className="gold-gradient text-secondary font-semibold px-8 py-3 rounded-lg elegant-shadow hover:scale-105 transition-transform">
+            Descobrir Mais Serviços
+          </button>
         </div>
       </div>
     </section>

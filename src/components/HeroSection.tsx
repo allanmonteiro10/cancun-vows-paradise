@@ -1,65 +1,94 @@
 import { Button } from "@/components/ui/button";
-import { Star, Users, Clock } from "lucide-react";
+import { Star, Play } from "lucide-react";
+
 const HeroSection = () => {
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return (
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(/lovable-uploads/82136e31-ed61-4135-9a31-b85a9d28b2e1.png)`
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+        style={{
+          backgroundImage: `url(/lovable-uploads/82136e31-ed61-4135-9a31-b85a9d28b2e1.png)`
+        }}
+      >
+        <div className="absolute inset-0 hero-overlay"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         {/* Trust Badge */}
-        <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2 mb-6">
+        <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8">
           <div className="flex">
-            {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-accent text-accent" />)}
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+            ))}
           </div>
-          <span className="text-sm font-medium">50+ Casais Realizaram o Sonho</span>
+          <span className="text-sm font-medium tracking-wide">Pioneiros em Destination Wedding no Caribe</span>
         </div>
 
-        <h1 className="wedding-headline text-5xl md:text-7xl mb-6 leading-tight">
-          Realize Seu Casamento dos Sonhos
-          <span className="wedding-script block md:text-6xl mt-2 text-[#00ffd2] text-6xl">em Cancun</span>
+        {/* Main Headline */}
+        <h1 className="mb-8 max-w-5xl mx-auto">
+          <span className="block font-inter font-light text-3xl md:text-4xl mb-4 tracking-wide">
+            Cuidamos de
+          </span>
+          <span className="block wedding-headline text-5xl md:text-7xl lg:text-8xl leading-none mb-4">
+            todos os detalhes
+          </span>
+          <span className="block font-inter font-light text-3xl md:text-4xl tracking-wide">
+            do seu{" "}
+            <em className="wedding-subline text-primary">casamento perfeito</em>
+          </span>
         </h1>
         
-        <p className="elegant-text md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed text-2xl">
-          <strong className="text-accent font-medium">APENAS 5 VAGAS</strong> restantes para 2025 - Cerimônias exclusivas no paraíso caribenho
+        {/* Subtitle */}
+        <p className="elegant-text text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+          Somos especialistas em cerimônias exclusivas no paraíso caribenho,
+          com mais de 50 casais que realizaram seus sonhos conosco.
         </p>
 
-        {/* Urgency Banner */}
+        {/* Video Play Button */}
+        <div className="mb-12">
+          <button className="group mx-auto flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-full hover:bg-white/30 transition-all duration-300">
+            <Play className="w-8 h-8 md:w-10 md:h-10 text-white ml-1 group-hover:scale-110 transition-transform" />
+          </button>
+          <p className="text-sm mt-3 text-white/80">Assista aos nossos casamentos reais</p>
+        </div>
         
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-          <Button variant="paradise" size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/50">
-            GARANTA SUA VAGA AGORA
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <Button size="lg" className="gold-gradient text-secondary font-semibold px-12 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
+            Descubra Nossos Destinos
           </Button>
-          <Button variant="elegant" size="lg" className="text-lg px-8 py-6">
-            Ver Fotos Reais
+          <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg backdrop-blur-sm">
+            Fale Conosco
           </Button>
         </div>
 
-        {/* Benefits */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm mb-8 flex-wrap">
-          <span>✅ Wedding Planner Exclusivo</span>
-          <div className="w-1 h-1 bg-white/50 rounded-full hidden sm:block"></div>
-          <span>✅ Cerimônia Sob Medida</span>
-          <div className="w-1 h-1 bg-white/50 rounded-full hidden sm:block"></div>
-          <span>✅ Pagamento Flexível</span>
-          <div className="w-1 h-1 bg-white/50 rounded-full hidden sm:block"></div>
-          <span>✅ Assessoria Completa</span>
+        {/* Benefits - Simple List */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-white/90 flex-wrap">
+          <span className="flex items-center gap-2">
+            ✨ Wedding Planner Exclusivo
+          </span>
+          <div className="w-1 h-1 bg-white/40 rounded-full hidden sm:block"></div>
+          <span className="flex items-center gap-2">
+            ✨ Cerimônia Sob Medida
+          </span>
+          <div className="w-1 h-1 bg-white/40 rounded-full hidden sm:block"></div>
+          <span className="flex items-center gap-2">
+            ✨ Assessoria Completa
+          </span>
         </div>
-        
-        
       </div>
       
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
+      {/* Elegant Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="w-0.5 h-16 bg-white/30 relative">
+          <div className="absolute top-0 w-0.5 h-4 bg-white animate-pulse"></div>
         </div>
+        <p className="text-xs text-white/60 mt-2 tracking-widest">ROLAR</p>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
