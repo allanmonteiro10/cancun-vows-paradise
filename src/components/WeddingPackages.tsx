@@ -134,11 +134,11 @@ const WeddingPackages = () => {
         </div>
         
         {/* Bottom CTA */}
-        <div className="text-center">
+        <div className="text-center px-4">
           <p className="elegant-text text-muted-foreground mb-6 text-lg">
             Todos os pacotes incluem assessoria para documentação necessária no Brasil
           </p>
-          <Button className="gold-gradient text-secondary font-semibold px-10 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
+          <Button className="gold-gradient text-secondary font-semibold px-6 md:px-10 py-4 text-base md:text-lg hover:scale-105 transition-transform elegant-shadow w-full max-w-md mx-auto">
             Personalize, fale com nossa equipe especializada
           </Button>
         </div>
