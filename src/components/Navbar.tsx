@@ -9,7 +9,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/8b1cacfa-0e4a-44f8-a1a9-734b9ed6a208.png" 
+              src="/lovable-uploads/5496a046-da1f-42eb-9691-da1686c2d3cb.png" 
               alt="Casamento Praia" 
               className="h-12 w-auto"
             />
