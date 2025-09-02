@@ -139,7 +139,8 @@ const WeddingPackages = () => {
             Todos os pacotes incluem assessoria para documentação necessária no Brasil
           </p>
           <Button className="gold-gradient text-secondary font-semibold px-6 md:px-10 py-4 text-base md:text-lg hover:scale-105 transition-transform elegant-shadow w-full max-w-md mx-auto">
-            Personalize, fale com nossa equipe especializada
+            <span className="block md:hidden">Fale com nossa Equipe</span>
+            <span className="hidden md:block">Personalize, fale com nossa equipe especializada</span>
           </Button>
         </div>
       </div>
