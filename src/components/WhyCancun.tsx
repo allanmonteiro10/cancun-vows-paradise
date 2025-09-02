@@ -1,26 +1,26 @@
-import { Heart, MapPin, Sun, Shield } from "lucide-react";
+import { Heart, Crown, Star, Sparkles } from "lucide-react";
 
 const WhyCancun = () => {
   const features = [
     {
       icon: Heart,
-      title: "Romance Tropical",
-      description: "Praias de areia branca e águas cristalinas turquesa criam o cenário perfeito para o seu dia especial."
+      title: "Romance Caribenho Exclusivo",
+      description: "Praias paradisíacas de areia branca e mar turquesa cristalino criam o cenário mais romântico do mundo para eternizar seu amor."
     },
     {
-      icon: MapPin,
-      title: "Localização Privilegiada",
-      description: "Riviera Maya oferece resorts de luxo e cenários únicos para cerimônias inesquecíveis."
+      icon: Crown,
+      title: "Luxo Premium & Privacidade",
+      description: "Resorts cinco estrelas e locais exclusivos na Riviera Maya, onde cada detalhe reflete a sofisticação que vocês merecem."
     },
     {
-      icon: Sun,
-      title: "Clima Perfeito",
-      description: "Sol o ano todo e temperaturas ideais garantem fotos perfeitas em qualquer época."
+      icon: Star,
+      title: "Perfeição Garantida",
+      description: "Clima tropical ideal 365 dias por ano e pôr do sol deslumbrante garantem fotos de revista em qualquer estação."
     },
     {
-      icon: Shield,
-      title: "Assessoria Completa",
-      description: "Cuidamos de todos os detalhes legais e organizacionais para você só se preocupar com o amor."
+      icon: Sparkles,
+      title: "Tranquilidade Total",
+      description: "Nossa equipe especializada cuida de toda burocracia e logística. Vocês só precisam se preocupar em viver este momento único."
     }
   ];
 
@@ -29,11 +29,12 @@ const WhyCancun = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
-            Por que escolher
-            <span className="block text-primary font-normal">Cancun?</span>
+            O Paraíso Perfeito Para Seu
+            <span className="block text-primary font-normal wedding-script text-5xl md:text-6xl">Grande Dia</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Descubra por que Cancun é o destino dos sonhos para casais que buscam uma cerimônia única no Caribe
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-primary">Apenas casais verdadeiramente especiais</strong> escolhem Cancún para criar memórias eternas. 
+            Descubra por que este é o destino mais desejado para cerimônias exclusivas no Caribe.
           </p>
         </div>
 
@@ -49,7 +50,7 @@ const WhyCancun = () => {
             />
           </div>
           <p className="text-center text-muted-foreground mt-4">
-            Veja como realizamos sonhos em um dos destinos mais paradisíacos do mundo
+            <strong className="text-primary">Momentos reais de pura magia</strong> - Veja como transformamos sonhos em realidade no paraíso caribenho
           </p>
         </div>
         
