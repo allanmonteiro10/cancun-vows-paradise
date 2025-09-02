@@ -55,13 +55,17 @@ const HeroSection = () => {
         </div>
         
         {/* CTA Buttons */}
-<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button size="lg" className="gold-gradient text-secondary font-semibold px-12 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
-            Descubra Nossas Opções
-          </Button>
-          <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg backdrop-blur-sm">
-            Veja algumas Fotos
-          </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <a href="#packages">
+            <Button size="lg" className="gold-gradient text-secondary font-semibold px-12 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
+              Descubra Nossas Opções
+            </Button>
+          </a>
+          <a href="#gallery">
+            <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg backdrop-blur-sm">
+              Veja algumas Fotos
+            </Button>
+          </a>
         </div>
 
         {/* Benefits - Simple List */}

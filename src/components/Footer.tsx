@@ -8,10 +8,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Heart className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-light">
-                Cancun <span className="text-primary font-normal">Vows</span>
-              </span>
+              <img 
+                src="/lovable-uploads/313ae957-3501-47db-be4d-e9230bdaeaf8.png" 
+                alt="Casamento Cancun" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-background/80 leading-relaxed mb-6 max-w-md">
               Especializados em realizar casamentos dos sonhos no paraíso caribenho. 

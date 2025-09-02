@@ -79,9 +79,11 @@ const OurServices = () => {
           <p className="elegant-text text-muted-foreground mb-6 text-lg">
             Pronto para planejar seu momento especial?
           </p>
-          <button className="gold-gradient text-secondary font-semibold px-8 py-3 rounded-lg elegant-shadow hover:scale-105 transition-transform">
-            Descobrir Mais Serviços
-          </button>
+          <a href="https://wa.me/5511999999999?text=Olá, gostaria de descobrir mais serviços para meu casamento em Cancun" target="_blank" rel="noopener noreferrer">
+            <button className="gold-gradient text-secondary font-semibold px-8 py-3 rounded-lg elegant-shadow hover:scale-105 transition-transform">
+              Descobrir Mais Serviços
+            </button>
+          </a>
         </div>
       </div>
     </section>

@@ -49,9 +49,11 @@ const Navbar = () => {
           </div>
           
           {/* CTA Button */}
-          <Button className="gold-gradient text-secondary font-semibold px-6 py-2 elegant-shadow hover:scale-105 transition-transform">
-            ORÇAMENTO
-          </Button>
+          <a href="https://wa.me/5511999999999?text=Olá, gostaria de solicitar um orçamento para meu casamento em Cancun" target="_blank" rel="noopener noreferrer">
+            <Button className="gold-gradient text-secondary font-semibold px-6 py-2 elegant-shadow hover:scale-105 transition-transform">
+              ORÇAMENTO
+            </Button>
+          </a>
         </div>
       </div>
     </nav>

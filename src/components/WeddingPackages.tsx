@@ -119,15 +119,17 @@ const WeddingPackages = () => {
               </CardContent>
               
               <CardFooter className="px-8 pb-8">
-                <Button 
-                  className={`w-full ${
-                    pkg.highlighted 
-                      ? 'gold-gradient text-secondary hover:scale-105' 
-                      : 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
-                  } font-semibold py-3 transition-all duration-300`}
-                >
-                  Escolher {pkg.name}
-                </Button>
+                <a href={`https://wa.me/5511999999999?text=Olá, gostaria de escolher o pacote de casamento ${pkg.name} em Cancun`} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className={`w-full ${
+                      pkg.highlighted 
+                        ? 'gold-gradient text-secondary hover:scale-105' 
+                        : 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
+                    } font-semibold py-3 transition-all duration-300`}
+                  >
+                    Escolher {pkg.name}
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
@@ -138,10 +140,12 @@ const WeddingPackages = () => {
           <p className="elegant-text text-muted-foreground mb-6 text-lg">
             Todos os pacotes incluem assessoria para documentação necessária no Brasil
           </p>
-          <Button className="gold-gradient text-secondary font-semibold px-6 md:px-10 py-4 text-base md:text-lg hover:scale-105 transition-transform elegant-shadow w-full max-w-md mx-auto">
-            <span className="block md:hidden">Fale com nossa Equipe</span>
-            <span className="hidden md:block">Personalize, fale com nossa equipe especializada</span>
-          </Button>
+          <a href="https://wa.me/5511999999999?text=Olá, gostaria de personalizar meu casamento em Cancun com sua equipe especializada" target="_blank" rel="noopener noreferrer">
+            <Button className="gold-gradient text-secondary font-semibold px-6 md:px-10 py-4 text-base md:text-lg hover:scale-105 transition-transform elegant-shadow w-full max-w-md mx-auto">
+              <span className="block md:hidden">Fale com nossa Equipe</span>
+              <span className="hidden md:block">Personalize, fale com nossa equipe especializada</span>
+            </Button>
+          </a>
         </div>
       </div>
     </section>
