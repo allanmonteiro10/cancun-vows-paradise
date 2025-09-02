@@ -40,20 +40,24 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* Social Proof */}
-        <div className="flex items-center justify-center gap-4 text-sm mb-8">
-          <div className="flex items-center gap-2">
-            
-            
+        {/* Benefits Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+          <div className="text-left">
+            <div className="text-accent font-semibold mb-2">✅ Wedding Planner Exclusivo</div>
+            <p className="text-sm text-white/80">Planejamento completo para que você viva cada detalhe sem preocupações.</p>
           </div>
-          <div className="w-1 h-1 bg-white/50 rounded-full"></div>
-          <span>✅ Sem taxas ocultas</span>
-            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
-          <span>✅ Cerimonialista Brasileiros</span>
-          <div className="w-1 h-1 bg-white/50 rounded-full"></div>
-          <span>✅ Pagamento facilitado</span>
-            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
-          <span>✅ Acessoria Completa</span>
+          <div className="text-left">
+            <div className="text-accent font-semibold mb-2">✅ Cerimônia Sob Medida</div>
+            <p className="text-sm text-white/80">Escolha entre um momento intimista a dois ou uma celebração inesquecível com convidados.</p>
+          </div>
+          <div className="text-left">
+            <div className="text-accent font-semibold mb-2">✅ Pagamento Flexível</div>
+            <p className="text-sm text-white/80">Condições facilitadas para tornar seu sonho ainda mais acessível.</p>
+          </div>
+          <div className="text-left">
+            <div className="text-accent font-semibold mb-2">✅ Assessoria Completa</div>
+            <p className="text-sm text-white/80">Do primeiro contato ao grande dia, cuidamos de tudo para que você só se preocupe em aproveitar.</p>
+          </div>
         </div>
         
         
