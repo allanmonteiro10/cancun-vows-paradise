@@ -9,11 +9,11 @@ const ContactForm = () => {
   return <section id="contact" className="py-20 paradise-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
-            Vamos planejar seu
-            <span className="block text-primary font-normal">Grande Dia</span>
+          <h2 className="wedding-headline text-4xl md:text-6xl mb-8 text-foreground">
+            Vamos planejar seu{" "}
+            <em className="wedding-subline text-primary">Grande Dia</em>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="elegant-text text-lg md:text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto">
             Entre em contato conosco e transforme seu sonho de casamento no Caribe em realidade
           </p>
         </div>

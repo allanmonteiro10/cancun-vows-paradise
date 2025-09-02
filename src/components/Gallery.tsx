@@ -51,11 +51,11 @@ const Gallery = () => {
     <section id="gallery" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground">
-            Galeria de 
-            <span className="block text-primary font-normal">Momentos Únicos</span>
+          <h2 className="wedding-headline text-4xl md:text-6xl mb-8 text-foreground">
+            Galeria de{" "}
+            <em className="wedding-subline text-primary">Momentos Únicos</em>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="elegant-text text-lg md:text-xl leading-relaxed text-muted-foreground">
             Explore alguns dos casamentos mais encantadores que realizamos nas praias paradisíacas de Cancun
           </p>
         </div>
