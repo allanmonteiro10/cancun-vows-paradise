@@ -42,8 +42,8 @@ const HeroSection = () => {
         
         {/* Subtitle */}
         <p className="elegant-text text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-          Somos especialistas em cerimônias exclusivas no paraíso caribenho,
-          com mais de 50 casais que realizaram seus sonhos conosco.
+          Especialistas em cerimônias exclusivas no paraíso caribenho, 
+          são mais de 50 histórias de amor já celebradas com perfeição.
         </p>
 
         {/* Video Play Button */}
@@ -57,9 +57,9 @@ const HeroSection = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button size="lg" className="gold-gradient text-secondary font-semibold px-12 py-4 text-lg hover:scale-105 transition-transform elegant-shadow">
-            Descubra Nossos Destinos
+            Descubra Nossas Opções
           </Button>
-          <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg backdrop-blur-sm">
+          <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover:text-secondary px-8 py-4 text-lg backdrop-blur-sm">
             Fale Conosco
           </Button>
         </div>
