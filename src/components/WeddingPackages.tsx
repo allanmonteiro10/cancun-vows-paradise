@@ -7,32 +7,35 @@ const WeddingPackages = () => {
     {
       name: "Intimista",
       icon: Sparkles,
-      price: "A partir de $8.900",
+      price: "A partir de $1.975",
       description: "Perfeito para casais que desejam uma cerimônia íntima e romântica",
       features: [
-        "Cerimônia na praia para até 20 pessoas",
+        "Cerimônia na praia para até 6 pessoas",
         "Decoração elegante com flores tropicais",
         "Fotógrafo profissional (2 horas)",
         "Bouquet da noiva",
         "Música ambiente",
-        "Brinde com champagne"
+        "Brinde com champagne",
+        "Transporte para os noivos"
       ],
       highlighted: false
     },
     {
       name: "Clássico",
       icon: Crown,
-      price: "A partir de $15.900",
+      price: "A partir de $5.900",
       description: "O pacote mais popular para uma celebração completa",
       features: [
-        "Cerimônia na praia para até 50 pessoas",
+        "Cerimônia na praia para até 20 pessoas",
         "Decoração premium com arco floral",
-        "Fotógrafo e videomaker (4 horas)",
+        "Fotógrafo, videomaker e Drone (4 horas)",
         "Bouquet e boutonnière",
-        "DJ e som profissional",
-        "Recepção com aperitivos",
+        "Violinista ou saxofonista",
+        "Cabelo e Maquíagem da Noiva",
         "Coordenador de casamento",
-        "Transporte para os noivos"
+        "Transporte executivo dos noivos",
+        "Transporte Convidados",
+        "Festa no Yatch"
       ],
       highlighted: true
     },
@@ -113,10 +116,10 @@ const WeddingPackages = () => {
         
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-6">
-            Todos os pacotes incluem assessoria jurídica para documentação no Brasil
+            Todos os pacotes incluem assessoria para documentação necessária no Brasil
           </p>
           <Button variant="outline" size="lg">
-            Comparar Todos os Pacotes
+            Personalize, fale com nossa equipe especializada
           </Button>
         </div>
       </div>
