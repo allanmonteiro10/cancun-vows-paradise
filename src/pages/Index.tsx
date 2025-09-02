@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WhyCancun from "@/components/WhyCancun";
+import OurServices from "@/components/OurServices";
 import Gallery from "@/components/Gallery";
 import WeddingPackages from "@/components/WeddingPackages";
 import ContactForm from "@/components/ContactForm";
@@ -14,6 +15,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <WhyCancun />
+        <OurServices />
         <Gallery />
         <WeddingPackages />
         <ContactForm />
