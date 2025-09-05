@@ -45,7 +45,7 @@ All colors MUST be HSL.
     --ring: 35 65% 65%;
 
     /* Elegant Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100% / 0.5), hsl(0 0% 100% / 0.5));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100% / 0.2), hsl(0 0% 100% / 0.2));
     --gradient-gold: linear-gradient(135deg, hsl(35 65% 65%), hsl(35 80% 75%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 96%));
 
