@@ -15,9 +15,9 @@ const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 text-center text-secondary">
         {/* Trust Badge */}
-        <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8">
+        <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-md border border-white/40 rounded-full px-6 py-3 mb-8">
           <div className="flex">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-4 h-4 fill-primary text-primary" />
@@ -48,10 +48,10 @@ const HeroSection = () => {
 
         {/* Video Play Button */}
         <div className="mb-12">
-          <button className="group mx-auto flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-full hover:bg-white/30 transition-all duration-300">
-            <Play className="w-8 h-8 md:w-10 md:h-10 text-white ml-1 group-hover:scale-110 transition-transform" />
+          <button className="group mx-auto flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-white/90 backdrop-blur-sm border-2 border-secondary/30 rounded-full hover:bg-white transition-all duration-300">
+            <Play className="w-8 h-8 md:w-10 md:h-10 text-secondary ml-1 group-hover:scale-110 transition-transform" />
           </button>
-          <p className="text-sm mt-3 text-white/80">Assista aos nossos casamentos reais</p>
+          <p className="text-sm mt-3 text-secondary/80">Assista aos nossos casamentos reais</p>
         </div>
         
         {/* CTA Buttons */}
@@ -62,22 +62,22 @@ const HeroSection = () => {
             </Button>
           </a>
           <a href="#gallery">
-            <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg backdrop-blur-sm">
+            <Button variant="outline" size="lg" className="border-secondary bg-white/90 text-secondary hover:bg-secondary hover:text-white px-8 py-4 text-lg backdrop-blur-sm">
               Veja algumas Fotos
             </Button>
           </a>
         </div>
 
         {/* Benefits - Simple List */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-white/90 flex-wrap">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-secondary/90 flex-wrap">
           <span className="flex items-center gap-2">
             ✨ Wedding Planner Exclusivo
           </span>
-          <div className="w-1 h-1 bg-white/40 rounded-full hidden sm:block"></div>
+          <div className="w-1 h-1 bg-secondary/40 rounded-full hidden sm:block"></div>
           <span className="flex items-center gap-2">
             ✨ Cerimônia Sob Medida
           </span>
-          <div className="w-1 h-1 bg-white/40 rounded-full hidden sm:block"></div>
+          <div className="w-1 h-1 bg-secondary/40 rounded-full hidden sm:block"></div>
           <span className="flex items-center gap-2">
             ✨ Assessoria Completa
           </span>
@@ -86,10 +86,10 @@ const HeroSection = () => {
       
       {/* Elegant Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-0.5 h-16 bg-white/30 relative">
-          <div className="absolute top-0 w-0.5 h-4 bg-white animate-pulse"></div>
+        <div className="w-0.5 h-16 bg-secondary/30 relative">
+          <div className="absolute top-0 w-0.5 h-4 bg-secondary animate-pulse"></div>
         </div>
-        <p className="text-xs text-white/60 mt-2 tracking-widest">ROLAR</p>
+        <p className="text-xs text-secondary/60 mt-2 tracking-widest">ROLAR</p>
       </div>
     </section>
   );
