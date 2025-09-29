@@ -45,7 +45,7 @@ const WhyCancun = () => {
             <div className="aspect-video bg-muted/50">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/6WpW6kUb7uE"
+                src="https://www.youtube.com/embed/bJUWNwlAN1k"
                 title="Casamentos Reais em Cancun"
                 frameBorder="0"
                 allowFullScreen
