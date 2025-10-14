@@ -26,9 +26,9 @@ const WeddingPackages = () => {
       price: "A partir de $5.900",
       description: "O pacote mais popular para uma celebração completa",
       features: [
-        "Cerimônia na praia para até 20 pessoas",
+        "Cerimônia na praia para até 15 pessoas",
         "Decoração premium com arco floral",
-        "Fotógrafo, videomaker e Drone (4 horas)",
+        "Fotógrafo e videomaker (4 horas)",
         "Bouquet e boutonnière",
         "Violinista ou saxofonista",
         "Cabelo e Maquíagem da Noiva",
