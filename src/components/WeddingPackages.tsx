@@ -42,7 +42,7 @@ const WeddingPackages = () => {
     {
       name: "Luxury",
       icon: Diamond,
-      price: "A partir de $28.900",
+      price: "A partir de $37.900",
       description: "A experiência mais exclusiva para seu grande dia",
       features: [
         "Cerimônia premium para até 100 pessoas",
